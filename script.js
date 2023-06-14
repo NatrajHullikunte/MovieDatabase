@@ -3,7 +3,7 @@ const apiKey = '20b73068'; // Replace with your OMDb API key
 // Function to fetch movie data
 async function fetchMovieData(searchTerm) {
 
-  const response = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&s=${searchTerm}`);
+  const response = await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&s=${searchTerm}`);
   const data = await response.json();
 
   return data.Search;
