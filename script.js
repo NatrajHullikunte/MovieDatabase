@@ -58,7 +58,7 @@ searchForm.addEventListener('submit', handleSearch);
 
   // Function to fetch movie details by IMDb ID
   async function fetchMovieDetails(imdbID) {
-    const response = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&i=${imdbID}`);
+    const response = await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&i=${imdbID}`);
     const data = await response.json();
   
     return data;
